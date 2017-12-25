@@ -89,6 +89,8 @@ while True:
 		frameClone[fY:fY+fH, fX:fX+fW] = santaresize
 
 	# show our detected faces along with smiling/not smiling labels
+	cv2.namedWindow("Face", cv2.WND_PROP_FULLSCREEN)
+	cv2.setWindowProperty("Face", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 	cv2.imshow("Face", frameClone)
 
 	# if the 'q' key is pressed, stop the loop
